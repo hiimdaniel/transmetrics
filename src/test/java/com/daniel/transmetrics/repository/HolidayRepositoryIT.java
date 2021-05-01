@@ -4,7 +4,7 @@ package com.daniel.transmetrics.repository;
 import com.daniel.transmetrics.TestUtil;
 import com.daniel.transmetrics.TransmetricsApplication;
 import com.daniel.transmetrics.repository.entity.Holiday;
-import com.daniel.transmetrics.service.model.DateApiResponse;
+import com.daniel.transmetrics.rest.model.DateApiResponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;

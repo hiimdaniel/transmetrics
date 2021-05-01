@@ -3,6 +3,7 @@ package com.daniel.transmetrics.service;
 import com.daniel.transmetrics.repository.HolidayRepository;
 import com.daniel.transmetrics.repository.entity.Holiday;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -11,6 +12,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
+@Slf4j
 public class HolidayService {
 
     private final HolidayRepository holidayRepository;
@@ -21,7 +23,9 @@ public class HolidayService {
         LocalDate startDate = LocalDate.of(year, 1, 1);
         LocalDate endDate = startDate.with(TemporalAdjusters.lastDayOfYear());
         if (!checkIfHolidayExistsAtYearForCountry(countryCode, startDate)) {
+            log.debug("Holidays for country {} for year {} could not be found in DB. Requesting data from API", countryCode, year);
             List<Holiday> fromApi = dateTimeApiService.requestHolidaysOfYearForCountry(countryCode, year);
+            log.debug("Holidays for country {} for year {} requested from API. Quantity of results: {}. Persisting returned holidays.", countryCode, year, fromApi.size());
             holidayRepository.saveAll(fromApi);
         }
         return getHolidaysByCountryWithinTimeRange(countryCode, startDate, endDate);
