@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost::5432/test-db?ApplicationName=${spring.application.name}&stringtype=unspecified
+    username: test
+    password: test

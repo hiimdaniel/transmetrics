@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: java-coding-challenge
+  flyway:
+    enabled: ${FLYWAY_ENABLED:true}
+    baseline-on-migrate: true
+  datasource:
+    url: jdbc:postgresql://${TEST_DB_HOST}:${TEST_DB_PORT:5432}/test-db?ApplicationName=${spring.application.name}&stringtype=unspecified
+    username: ${TEST_DB_USERNAME}
+    password: ${TEST_DB_PASSWORD}
+    hikari:
+      maximum-pool-size: ${DB_MAX_POOL_SIZE:10}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        ddl-auto: "validate"
+        globally_quoted_identifiers: true

@@ -49,8 +49,78 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<!-- Create a dockerized integration testing environment -->
+						<groupId>com.dkanejs.maven.plugins</groupId>
+						<artifactId>docker-compose-maven-plugin</artifactId>
+						<version>1.0.1</version>
+						<configuration>
+							<composeFile>${project.basedir}/src/test/resources/docker/docker-compose.yml</composeFile>
+							<detachedMode>true</detachedMode>
+						</configuration>
+						<executions>
+							<execution>
+								<id>docker-compose-up</id>
+								<phase>pre-integration-test</phase>
+								<goals>
+									<goal>up</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>docker-compose-down</id>
+								<phase>post-integration-test</phase>
+								<goals>
+									<goal>down</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>com.github.slem1</groupId>
+						<artifactId>await-maven-plugin</artifactId>
+						<version>1.2</version>
+						<executions>
+							<execution>
+								<phase>pre-integration-test</phase>
+								<goals>
+									<goal>Await</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<poll>
+								<attempts>3</attempts>
+								<sleep>1000</sleep>
+							</poll>
+							<tcpConnections>
+								<tcpConnection>
+									<host>localhost</host>
+									<port>5432</port>
+								</tcpConnection>
+							</tcpConnections>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>
