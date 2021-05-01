@@ -19,3 +19,9 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQL95Dialect
         ddl-auto: "validate"
         globally_quoted_identifiers: true
+
+transmetrics:
+  date-time-api:
+    host: ${DATE_TIME_API_HOST:https://api.xmltime.com}
+    accesskey: ${DATE_TIME_API_ACCESS_KEY}
+    secret_key: ${DATE_TIME_API_SECRET_KEY}

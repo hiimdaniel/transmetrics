@@ -1,0 +1,1176 @@
+{
+  "version": 3,
+  "billing": {
+    "credits": 1
+  },
+  "holidays": [
+    {
+      "id": 1687,
+      "urlid": "romania/new-year-day",
+      "url": "https://www.timeanddate.com/holidays/romania/new-year-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "New Year's Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "New Year’s Day (Anul Nou) and the following day, on January 1 and 2 respectively, are annual holidays in Romania."
+        }
+      ],
+      "types": [
+        "National holiday"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-01-01",
+        "datetime": {
+          "year": 2022,
+          "month": 1,
+          "day": 1
+        }
+      },
+      "uid": "00069700000007e6"
+    },
+    {
+      "id": 1688,
+      "urlid": "romania/new-year-day-2",
+      "url": "https://www.timeanddate.com/holidays/romania/new-year-day-2",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Day after New Year's Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Both New Year’s Day (Anul Nou) and the following day, on January 1 and 2 respectively, are annual holidays in Romania."
+        }
+      ],
+      "types": [
+        "National holiday"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-01-02",
+        "datetime": {
+          "year": 2022,
+          "month": 1,
+          "day": 2
+        }
+      },
+      "uid": "00069800000007e6"
+    },
+    {
+      "id": 3239,
+      "urlid": "romania/unification-day",
+      "url": "https://www.timeanddate.com/holidays/romania/unification-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Unification Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Unification Day celebrates the political union between Wallachia and Moldavia, which is deemed as the foundation of modern Romania."
+        }
+      ],
+      "types": [
+        "National holiday"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-01-24",
+        "datetime": {
+          "year": 2022,
+          "month": 1,
+          "day": 24
+        }
+      },
+      "uid": "000ca700000007e6"
+    },
+    {
+      "id": 5145,
+      "urlid": "romania/constantin-brancusi-day",
+      "url": "https://www.timeanddate.com/holidays/romania/constantin-brancusi-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Constantin Brancusi Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Constantin Brancusi Day is a observance in Romania"
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-02-19",
+        "datetime": {
+          "year": 2022,
+          "month": 2,
+          "day": 19
+        }
+      },
+      "uid": "00141900000007e6"
+    },
+    {
+      "id": 3200,
+      "urlid": "romania/dragobete",
+      "url": "https://www.timeanddate.com/holidays/romania/dragobete",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Dragobete"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Dragobete is a folk holiday in Romania with ancient origins that centers on love and the return of spring."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-02-24",
+        "datetime": {
+          "year": 2022,
+          "month": 2,
+          "day": 24
+        }
+      },
+      "uid": "000c8000000007e6"
+    },
+    {
+      "id": 3190,
+      "urlid": "romania/martisor",
+      "url": "https://www.timeanddate.com/holidays/romania/martisor",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Mărțișor"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Mărțișor in Romania celebrates the start of spring. The name stems from the word March, which is “martie” in Romanian."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-03-01",
+        "datetime": {
+          "year": 2022,
+          "month": 3,
+          "day": 1
+        }
+      },
+      "uid": "000c7600000007e6"
+    },
+    {
+      "id": 2291,
+      "urlid": "romania/women-day",
+      "url": "https://www.timeanddate.com/holidays/romania/women-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "International Women's Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Many people in Romania celebrate Women’s Day on March 8."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-03-08",
+        "datetime": {
+          "year": 2022,
+          "month": 3,
+          "day": 8
+        }
+      },
+      "uid": "0008f300000007e6"
+    },
+    {
+      "id": 380,
+      "urlid": "seasons/vernal-equinox",
+      "url": "https://www.timeanddate.com/holidays/seasons/vernal-equinox",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "March Equinox"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "March Equinox in Romania (Bucharest)"
+        }
+      ],
+      "types": [
+        "Season"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-03-20T17:33:25+02:00",
+        "datetime": {
+          "year": 2022,
+          "month": 3,
+          "day": 20,
+          "hour": 17,
+          "minute": 33,
+          "second": 25
+        },
+        "timezone": {
+          "offset": "+02:00",
+          "zoneabb": "EET",
+          "zoneoffset": 7200,
+          "zonedst": 0,
+          "zonetotaloffset": 7200
+        }
+      },
+      "uid": "00017c006f7207e6"
+    },
+    {
+      "id": 6132,
+      "urlid": "romania/good-friday",
+      "url": "https://www.timeanddate.com/holidays/romania/good-friday",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Orthodox Good Friday"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Millions of Orthodox Christians around the world annually observe Good Friday to commemorate the events leading up to Jesus Christ's crucifixion."
+        }
+      ],
+      "types": [
+        "National holiday",
+        "Orthodox"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-04-22",
+        "datetime": {
+          "year": 2022,
+          "month": 4,
+          "day": 22
+        }
+      },
+      "uid": "0017f400000007e6"
+    },
+    {
+      "id": 1695,
+      "urlid": "romania/easter-sunday",
+      "url": "https://www.timeanddate.com/holidays/romania/easter-sunday",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Orthodox Easter Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Easter (Paștele) is both a religious and a national holiday in Romania. The Easter date is based on the Orthodox Christian Church’s calendar."
+        }
+      ],
+      "types": [
+        "National holiday",
+        "Orthodox"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-04-24",
+        "datetime": {
+          "year": 2022,
+          "month": 4,
+          "day": 24
+        }
+      },
+      "uid": "00069f00000007e6"
+    },
+    {
+      "id": 1696,
+      "urlid": "romania/easter-monday",
+      "url": "https://www.timeanddate.com/holidays/romania/easter-monday",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Orthodox Easter Monday"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "The Day after Easter (Paștele) is both a religious and a national holiday in Romania. The Easter date is based on the Orthodox Christian Church’s calendar."
+        }
+      ],
+      "types": [
+        "National holiday",
+        "Orthodox"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-04-25",
+        "datetime": {
+          "year": 2022,
+          "month": 4,
+          "day": 25
+        }
+      },
+      "uid": "0006a000000007e6"
+    },
+    {
+      "id": 1689,
+      "urlid": "romania/labor-day",
+      "url": "https://www.timeanddate.com/holidays/romania/labor-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Labor Day / May Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Labor Day (Ziua muncii) is a national public holiday in Romania on May 1 each year."
+        }
+      ],
+      "types": [
+        "National holiday"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-05-01",
+        "datetime": {
+          "year": 2022,
+          "month": 5,
+          "day": 1
+        }
+      },
+      "uid": "00069900000007e6"
+    },
+    {
+      "id": 1697,
+      "urlid": "romania/mother-day",
+      "url": "https://www.timeanddate.com/holidays/romania/mother-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Mother's Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Many Romanians celebrate Mother’s Day (Ziua Mamei) on the first Sunday of May."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-05-01",
+        "datetime": {
+          "year": 2022,
+          "month": 5,
+          "day": 1
+        }
+      },
+      "uid": "0006a100000007e6"
+    },
+    {
+      "id": 2290,
+      "urlid": "romania/father-day",
+      "url": "https://www.timeanddate.com/holidays/romania/father-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Father's Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Many Romanians celebrate Father’s Day (Ziua Tatălui) on the second Sunday of May."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-05-08",
+        "datetime": {
+          "year": 2022,
+          "month": 5,
+          "day": 8
+        }
+      },
+      "uid": "0008f200000007e6"
+    },
+    {
+      "id": 6291,
+      "urlid": "romania/monarchy-day",
+      "url": "https://www.timeanddate.com/holidays/romania/monarchy-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Monarchy Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Monarchy Day is a observance in Romania"
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-05-10",
+        "datetime": {
+          "year": 2022,
+          "month": 5,
+          "day": 10
+        }
+      },
+      "uid": "00189300000007e6"
+    },
+    {
+      "id": 1699,
+      "urlid": "romania/children-day",
+      "url": "https://www.timeanddate.com/holidays/romania/children-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Children's Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Children’s Day (Ziua Copilului) is annually celebrated on June 1 in Romania."
+        }
+      ],
+      "types": [
+        "National holiday"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-06-01",
+        "datetime": {
+          "year": 2022,
+          "month": 6,
+          "day": 1
+        }
+      },
+      "uid": "0006a301000007e6"
+    },
+    {
+      "id": 1698,
+      "urlid": "romania/ascension",
+      "url": "https://www.timeanddate.com/holidays/romania/ascension",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Orthodox Ascension Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Ascension Day (Înălțarea) is an annual observance in Romania to commemorate the Christian belief of Jesus Christ’s ascension into heaven."
+        }
+      ],
+      "types": [
+        "Observance",
+        "Orthodox"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-06-02",
+        "datetime": {
+          "year": 2022,
+          "month": 6,
+          "day": 2
+        }
+      },
+      "uid": "0006a200000007e6"
+    },
+    {
+      "id": 1693,
+      "urlid": "romania/pentecost-sunday",
+      "url": "https://www.timeanddate.com/holidays/romania/pentecost-sunday",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Orthodox Pentecost"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Many Christians in Romania celebrate the Pentecost (Rusalii or Rusaliile) public holiday, also known as Whitsunday or Whit Sunday."
+        }
+      ],
+      "types": [
+        "National holiday",
+        "Orthodox"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-06-12",
+        "datetime": {
+          "year": 2022,
+          "month": 6,
+          "day": 12
+        }
+      },
+      "uid": "00069d00000007e6"
+    },
+    {
+      "id": 1694,
+      "urlid": "romania/pentecost-monday",
+      "url": "https://www.timeanddate.com/holidays/romania/pentecost-monday",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Orthodox Pentecost Monday"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Many Christians celebrate the Whit Monday (Rusalii or Rusaliile) public holiday in Romania."
+        }
+      ],
+      "types": [
+        "National holiday",
+        "Orthodox"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-06-13",
+        "datetime": {
+          "year": 2022,
+          "month": 6,
+          "day": 13
+        }
+      },
+      "uid": "00069e00000007e6"
+    },
+    {
+      "id": 382,
+      "urlid": "seasons/june-solstice",
+      "url": "https://www.timeanddate.com/holidays/seasons/june-solstice",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "June Solstice"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "June Solstice in Romania (Bucharest)"
+        }
+      ],
+      "types": [
+        "Season"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-06-21T12:13:51+03:00",
+        "datetime": {
+          "year": 2022,
+          "month": 6,
+          "day": 21,
+          "hour": 12,
+          "minute": 13,
+          "second": 51
+        },
+        "timezone": {
+          "offset": "+03:00",
+          "zoneabb": "EEST",
+          "zoneoffset": 7200,
+          "zonedst": 3600,
+          "zonetotaloffset": 10800
+        }
+      },
+      "uid": "00017e006f7207e6"
+    },
+    {
+      "id": 1700,
+      "urlid": "romania/flag-day",
+      "url": "https://www.timeanddate.com/holidays/romania/flag-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Flag Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Romania’s Flag Day (Ziua Tricolorului) is an annual observance on June 26."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-06-26",
+        "datetime": {
+          "year": 2022,
+          "month": 6,
+          "day": 26
+        }
+      },
+      "uid": "0006a400000007e6"
+    },
+    {
+      "id": 1701,
+      "urlid": "romania/national-anthem-day",
+      "url": "https://www.timeanddate.com/holidays/romania/national-anthem-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "National Anthem Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Romania’s Anthem Day (Ziua Imnului Național) is an annual observance on July 29."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-07-29",
+        "datetime": {
+          "year": 2022,
+          "month": 7,
+          "day": 29
+        }
+      },
+      "uid": "0006a500000007e6"
+    },
+    {
+      "id": 2218,
+      "urlid": "romania/st-mary-day",
+      "url": "https://www.timeanddate.com/holidays/romania/st-mary-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "St Mary's Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "The feast day of the Assumption of Mary is a national holiday in Romania on August 15 every year."
+        }
+      ],
+      "types": [
+        "National holiday"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-08-15",
+        "datetime": {
+          "year": 2022,
+          "month": 8,
+          "day": 15
+        }
+      },
+      "uid": "0008aa00000007e6"
+    },
+    {
+      "id": 381,
+      "urlid": "seasons/autumnal-equniox",
+      "url": "https://www.timeanddate.com/holidays/seasons/autumnal-equniox",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "September Equinox"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "September Equinox in Romania (Bucharest)"
+        }
+      ],
+      "types": [
+        "Season"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-09-23T04:03:34+03:00",
+        "datetime": {
+          "year": 2022,
+          "month": 9,
+          "day": 23,
+          "hour": 4,
+          "minute": 3,
+          "second": 34
+        },
+        "timezone": {
+          "offset": "+03:00",
+          "zoneabb": "EEST",
+          "zoneoffset": 7200,
+          "zonedst": 3600,
+          "zonetotaloffset": 10800
+        }
+      },
+      "uid": "00017d006f7207e6"
+    },
+    {
+      "id": 2486,
+      "urlid": "romania/halloween",
+      "url": "https://www.timeanddate.com/holidays/romania/halloween",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Halloween"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Some places in Romania, including in parts of Transylvania, have special Halloween events inspired by the Dracula theme on October 31."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-10-31",
+        "datetime": {
+          "year": 2022,
+          "month": 10,
+          "day": 31
+        }
+      },
+      "uid": "0009b600000007e6"
+    },
+    {
+      "id": 2343,
+      "urlid": "romania/st-andrew-day",
+      "url": "https://www.timeanddate.com/holidays/romania/st-andrew-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "St Andrew's Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "St Andrew’s Day (Ziua Sfântului Andrei) is a national holiday in Romania on November 30 every year."
+        }
+      ],
+      "types": [
+        "National holiday"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-11-30",
+        "datetime": {
+          "year": 2022,
+          "month": 11,
+          "day": 30
+        }
+      },
+      "uid": "00092700000007e6"
+    },
+    {
+      "id": 2217,
+      "urlid": "romania/ziua-nationala",
+      "url": "https://www.timeanddate.com/holidays/romania/ziua-nationala",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "National holiday"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "National Day in Romania, also called Unification Day, is an annual public holiday to remember when the country’s provinces became united on December 1, 1918."
+        }
+      ],
+      "types": [
+        "National holiday"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-12-01",
+        "datetime": {
+          "year": 2022,
+          "month": 12,
+          "day": 1
+        }
+      },
+      "uid": "0008a900000007e6"
+    },
+    {
+      "id": 1702,
+      "urlid": "romania/constitution-day",
+      "url": "https://www.timeanddate.com/holidays/romania/constitution-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Constitution Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Romania’s Constitution Day is observed on December 8 every year."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-12-08",
+        "datetime": {
+          "year": 2022,
+          "month": 12,
+          "day": 8
+        }
+      },
+      "uid": "0006a600000007e6"
+    },
+    {
+      "id": 383,
+      "urlid": "seasons/december-solstice",
+      "url": "https://www.timeanddate.com/holidays/seasons/december-solstice",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "December Solstice"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "December Solstice in Romania (Bucharest)"
+        }
+      ],
+      "types": [
+        "Season"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-12-21T23:48:13+02:00",
+        "datetime": {
+          "year": 2022,
+          "month": 12,
+          "day": 21,
+          "hour": 23,
+          "minute": 48,
+          "second": 13
+        },
+        "timezone": {
+          "offset": "+02:00",
+          "zoneabb": "EET",
+          "zoneoffset": 7200,
+          "zonedst": 0,
+          "zonetotaloffset": 7200
+        }
+      },
+      "uid": "00017f006f7207e6"
+    },
+    {
+      "id": 2485,
+      "urlid": "romania/christmas-eve",
+      "url": "https://www.timeanddate.com/holidays/romania/christmas-eve",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Christmas Eve"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Christmas Eve, or the day before Christmas Day, falls on December 24 every year in Romania."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-12-24",
+        "datetime": {
+          "year": 2022,
+          "month": 12,
+          "day": 24
+        }
+      },
+      "uid": "0009b500000007e6"
+    },
+    {
+      "id": 1691,
+      "urlid": "romania/christmas-day",
+      "url": "https://www.timeanddate.com/holidays/romania/christmas-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Christmas Day"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Christmas Day is a Christian holiday to celebrate Jesus Christ’s birth in Romania and falls on December 25 every year."
+        }
+      ],
+      "types": [
+        "National holiday"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-12-25",
+        "datetime": {
+          "year": 2022,
+          "month": 12,
+          "day": 25
+        }
+      },
+      "uid": "00069b00000007e6"
+    },
+    {
+      "id": 1692,
+      "urlid": "romania/boxing-day",
+      "url": "https://www.timeanddate.com/holidays/romania/boxing-day",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "Second day of Christmas"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "The second day of Christmas falls on December 26 and is part of a two-day Christian holiday in Romania to celebrate Jesus Christ’s birth."
+        }
+      ],
+      "types": [
+        "National holiday"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-12-26",
+        "datetime": {
+          "year": 2022,
+          "month": 12,
+          "day": 26
+        }
+      },
+      "uid": "00069c00000007e6"
+    },
+    {
+      "id": 2479,
+      "urlid": "romania/new-year-eve",
+      "url": "https://www.timeanddate.com/holidays/romania/new-year-eve",
+      "country": {
+        "id": "ro",
+        "name": "Romania"
+      },
+      "name": [
+        {
+          "lang": "en",
+          "text": "New Year's Eve"
+        }
+      ],
+      "oneliner": [
+        {
+          "lang": "en",
+          "text": "Many Romanians celebrate New Year’s Eve (Revelion) on December 31, the last day of the year in the Gregorian calendar."
+        }
+      ],
+      "types": [
+        "Observance"
+      ],
+      "subtype": null,
+      "date": {
+        "iso": "2022-12-31",
+        "datetime": {
+          "year": 2022,
+          "month": 12,
+          "day": 31
+        }
+      },
+      "uid": "0009af00000007e6"
+    }
+  ]
+}
