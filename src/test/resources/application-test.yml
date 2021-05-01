@@ -2,15 +2,19 @@ spring:
   flyway:
     enabled: false
   datasource:
-    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: test
     password: test
+    driver-class-name: org.h2.Driver
+    hikari:
+      maximum-pool-size: ${DB_MAX_POOL_SIZE:10}
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: create
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.H2Dialect
-        ddl-auto: "create"
+        ddl-auto: "none"
         globally_quoted_identifiers: true
+        temp:
+          use_jdbc_metadata_defaults: false
