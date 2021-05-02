@@ -33,6 +33,8 @@ public class Holiday {
     public static final String JSON_COLUMN_TYPE = "jsonb";
 
     @Id
+    private String uid;
+
     private Long id;
 
     @Column(name = "url_id")
@@ -55,8 +57,6 @@ public class Holiday {
 
     private LocalDate date;
 
-    private String uid;
-
     @JsonProperty("oneliner")
     private void unpackNestedOneliner(List<Map<String, String>> onelinerObject) {
         oneLiner = onelinerObject.get(0).get("text");
@@ -69,7 +69,7 @@ public class Holiday {
 
     @JsonProperty("country")
     private void unpackNestedCountry(Map<String, String> countryObject) {
-        countryId=countryObject.get("id");
+        countryId = countryObject.get("id");
     }
 
     @JsonProperty("date")

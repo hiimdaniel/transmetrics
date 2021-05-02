@@ -1,6 +1,6 @@
 package com.daniel.transmetrics.service;
 
-import com.daniel.transmetrics.repository.config.DateTimeAPiClient;
+import com.daniel.transmetrics.config.DateTimeAPiClient;
 import com.daniel.transmetrics.repository.entity.Holiday;
 import com.daniel.transmetrics.service.exception.HolidayApiException;
 import com.daniel.transmetrics.service.exception.HolidayNotFoundException;

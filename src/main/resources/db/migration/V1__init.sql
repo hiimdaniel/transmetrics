@@ -1,5 +1,7 @@
 CREATE TABLE holidays
 (
+
+    uid        text   NOT NULL,
     id         BIGINT NOT NULL,
     url_id     text   NOT NULL,
     url        text   NOT NULL,
@@ -9,6 +11,5 @@ CREATE TABLE holidays
     types      jsonb  NOT NULL,
     subtype    jsonb  NOT NULL,
     date       date   NOT NULL,
-    uid        text   NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (uid)
 );
