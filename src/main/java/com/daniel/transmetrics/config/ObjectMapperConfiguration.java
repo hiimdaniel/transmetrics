@@ -1,4 +1,4 @@
-package com.daniel.transmetrics.repository.config;
+package com.daniel.transmetrics.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;

@@ -1,4 +1,4 @@
-package com.daniel.transmetrics.repository.config;
+package com.daniel.transmetrics.config;
 
 import com.daniel.transmetrics.rest.model.DateApiResponse;
 import feign.QueryMap;

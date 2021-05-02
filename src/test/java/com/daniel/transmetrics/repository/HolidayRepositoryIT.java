@@ -6,7 +6,6 @@ import com.daniel.transmetrics.TransmetricsApplication;
 import com.daniel.transmetrics.repository.entity.Holiday;
 import com.daniel.transmetrics.rest.model.DateApiResponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -27,9 +26,6 @@ public class HolidayRepositoryIT {
 
     @Autowired
     private HolidayRepository repository;
-
-    @Autowired
-    private ObjectMapper mapper;
 
     @BeforeEach
     public void setUp() {

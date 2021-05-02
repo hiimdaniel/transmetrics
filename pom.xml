@@ -21,6 +21,7 @@
 		<feign-jackson.version>11.0</feign-jackson.version>
 		<feign-okhttp.version>11.1</feign-okhttp.version>
 		<commons-codec.version>1.15</commons-codec.version>
+		<spring-boot-starter-webflux.version>2.4.5</spring-boot-starter-webflux.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -40,16 +41,6 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 			<version>${spring-cloud-starter-openfeign.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>io.github.openfeign</groupId>
-			<artifactId>feign-jackson</artifactId>
-			<version>${feign-jackson.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>io.github.openfeign</groupId>
-			<artifactId>feign-okhttp</artifactId>
-			<version>${feign-okhttp.version}</version>
 		</dependency>
 
 		<!--DB-->
@@ -83,6 +74,16 @@
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
 			<version>${commons-codec.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.openfeign</groupId>
+			<artifactId>feign-jackson</artifactId>
+			<version>${feign-jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.openfeign</groupId>
+			<artifactId>feign-okhttp</artifactId>
+			<version>${feign-okhttp.version}</version>
 		</dependency>
 
 
