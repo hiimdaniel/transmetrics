@@ -1,0 +1,25 @@
+version: '2'
+services:
+  transmetrics:
+    image: transmetrics:0.0.1-SNAPSHOT
+    container_name: transmetrics
+    hostname: transmetrics
+    ports:
+    - 8080:8080
+    environment:
+      TEST_DB_HOST: 'test-db'
+      TEST_DB_PORT: '5432'
+      TEST_DB_USERNAME: 'test'
+      TEST_DB_PASSWORD: 'test'
+      SPRING_PROFILES_ACTIVE: 'dev'
+
+  test-db:
+    image: library/postgres:12-alpine
+    container_name: test-db
+    hostname: test-db
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: 'test-db'
+      POSTGRES_USER: 'test'
+      POSTGRES_PASSWORD: 'test'
