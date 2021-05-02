@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Sample application to query Date-Time API</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p>
+    Hello my dear friend from the beautiful Romania! I made a simple application for you to get holidays for a given
+    year and store
+    it in a DB. Bellow you can find different options to make it work. Please note that this page is only a simple and
+    limited
+    application of the service and all the called endpoints from this page can be accessed as REST endpoints as well.
+    To get more info on the available endpoints please visit the <a href="http://localhost:8080/swagger-ui/">Swagger documentation</a>.
+</p>
+<p>
+    Have fun!
+</p>
+<p>
+    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</p>
+<p>
+    For every request you need to select a country and a year from the bellow drop-down selector.
+</p>
+<p>
+    Click on the "Submit" button to give it a try! It will initialize a simple request and fill the text area with the
+    response bellow.
+</p>
+<p/>
+<select name="counties" id="counties">
+    <option value="ro">Romania</option>
+    <option value="no">Norway</option>
+</select>
+<select name="years" id="years">
+    <option value="1990">1990</option>
+    <option value="1991">1991</option>
+    <option value="1992">1992</option>
+    <option value="1993">1993</option>
+    <option value="1994">1994</option>
+    <option value="1995">1995</option>
+    <option value="1996">1996</option>
+    <option value="1997">1997</option>
+    <option value="1998">1998</option>
+    <option value="1999">1999</option>
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    <option value="2003">2003</option>
+    <option value="2004">2004</option>
+    <option value="2005">2005</option>
+    <option value="2006">2006</option>
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    <option value="2009">2009</option>
+    <option value="2010">2010</option>
+    <option value="2011">2011</option>
+    <option value="2012">2012</option>
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+    <option value="2026">2026</option>
+    <option value="2027">2027</option>
+    <option value="2028">2028</option>
+    <option value="2029">2029</option>
+    <option value="2030">2030</option>
+</select>
+<button id="simple-submit" name="submit" onclick="callSimple()">Submit</button>
+<p/>
+<p>
+    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</p>
+<p>
+    You can also submit a paginated request by filling the bellow fields and clicking on the "Submit Paginated" button.
+    Please note that this request also requires the above year and country parameters.
+    A paginated response could be especially useful when you expect a huge dataset as a response and you want to process
+    it in a form of smaller pieces. The response will contain details about
+    the page size, number of expected pages, number of total elements, a link to the next page and many other useful
+    information which can help you during response processing.
+</p>
+<p>
+    <label for="page-no">Page number:</label>
+    <input name="pageNo" id="page-no" type="number" min="0">
+    <label for="page-size">Page size:</label>
+    <input name="pageSize" id="page-size" type="number" min="1">
+    <button id="paginated-submit" name="paginatedSubmit" onclick="callPaginated()">Submit Paginated</button>
+</p>
+<p>
+    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</p>
+<p>
+    Our last example will show you a response stream. Just as pagination response streaming is also useful in case of
+    huge datasets but in this case
+    you will get the response as a stream (da...). Streaming responses can help you to build a reactive consumer
+    application without the burden of paging
+    or figuring out how to store large responses in memory. Please note that this request also requires the above year
+    and country parameters.
+</p>
+<p>
+    <button id="stream-submit" name="streamSubmit" onclick="callStream()">Submit Stream</button>
+</p>
+<textarea id="resultJsonTextArea" cols=200 rows=100 readonly></textarea>
+
+<script>
+    const callSimple = async () => {
+        var country = document.getElementById("counties").value;
+        var year = document.getElementById("years").value;
+        var textArea = document.getElementById("resultJsonTextArea");
+        fetch('http://localhost:8080/holidays/simple?country-code=' + country + '&year=' + year)
+            .then(value => value.json())
+            .then(respJson => textArea.value = JSON.stringify(respJson, undefined, 4));
+    }
+    const callPaginated = async () => {
+        var country = document.getElementById("counties").value;
+        var year = document.getElementById("years").value;
+        var pageNo = document.getElementById("page-no").value;
+        var pageSize = document.getElementById("page-size").value;
+        var textArea = document.getElementById("resultJsonTextArea");
+        fetch('http://localhost:8080/holidays/paginated?country-code=' + country + '&year=' + year + '&page-number=' + pageNo + '&page-size=' + pageSize)
+            .then(value => value.json())
+            .then(respJson => textArea.value = JSON.stringify(respJson, undefined, 4));
+    }
+    const callStream = async () => {
+        var country = document.getElementById("counties").value;
+        var year = document.getElementById("years").value;
+        var textArea = document.getElementById("resultJsonTextArea");
+        fetch('http://localhost:8080/holidays/stream?country-code=' + country + '&year=' + year)
+            .then(response => response.body)
+            .then(body => {
+                const reader = body.getReader();
+                return new ReadableStream({
+                    start(controller) {
+                        reader.read().then(({value}) => {
+                            var valueString= new TextDecoder().decode(value);
+                            var jsonValue=JSON.parse(valueString);
+                            console.log(JSON.stringify(jsonValue, undefined, 4));
+                            var currentTextAreaValue=textArea.value
+                            textArea.value=currentTextAreaValue+JSON.stringify(jsonValue, undefined, 4);
+                        })
+                        return pump();
+                        function pump() {
+                            return reader.read().then(({done, value}) => {
+                                if (done) {
+                                    controller.close();
+                                    return;
+                                }
+                                controller.enqueue(value);
+                                return pump();
+                            });
+                        }
+                    }
+                })
+            })
+            .then(stream => new Response(stream))
+            .catch(err => console.error(err));
+    }
+</script>
+</body>
+
+</html>

@@ -22,6 +22,8 @@
 		<feign-okhttp.version>11.1</feign-okhttp.version>
 		<commons-codec.version>1.15</commons-codec.version>
 		<spring-boot-starter-webflux.version>2.4.5</spring-boot-starter-webflux.version>
+		<springfox-swagger-ui.version>3.0.0</springfox-swagger-ui.version>
+		<springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -41,6 +43,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 			<version>${spring-cloud-starter-openfeign.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
 		<!--DB-->
@@ -84,6 +90,16 @@
 			<groupId>io.github.openfeign</groupId>
 			<artifactId>feign-okhttp</artifactId>
 			<version>${feign-okhttp.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${springfox-swagger-ui.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>${springfox-boot-starter.version}</version>
 		</dependency>
 
 

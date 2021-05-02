@@ -5,7 +5,6 @@ import com.daniel.transmetrics.rest.model.PaginatedHolidayResponse;
 import com.daniel.transmetrics.service.HolidayService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,6 +17,7 @@ import java.net.URISyntaxException;
 import java.util.List;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+import static org.springframework.http.MediaType.TEXT_PLAIN;
 
 @RestController
 @RequestMapping("/holidays")
@@ -25,6 +25,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 public class HolidayController {
 
     private final HolidayService holidayService;
+
 
     @GetMapping(path = "/simple", produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Holiday>> holidays(@RequestParam("country-code") String countryCode, @RequestParam("year") Integer year) {
@@ -45,9 +46,9 @@ public class HolidayController {
     }
 
     @GetMapping(path = "/stream")
-    @Transactional
     public void streamHolidays(@RequestParam("country-code") String countryCode, @RequestParam("year") Integer year,
                                HttpServletResponse response) throws IOException {
+        response.setContentType(TEXT_PLAIN.toString());
         holidayService.writeHolidaysByCountryForAGivenYearAsStream(countryCode, year, response);
     }
 }
