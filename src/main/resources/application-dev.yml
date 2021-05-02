@@ -6,5 +6,5 @@ spring:
 transmetrics:
   date-time-api:
     host: https://api.xmltime.com
-    accesskey: fill-me-out
-    secret_key: fill-me-out
+    accesskey: Vp26hyEEOJ
+    secret_key: 89GXwVOJUec254TAdYn4
