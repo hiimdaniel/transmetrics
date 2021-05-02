@@ -1,10 +1,10 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/test-db?ApplicationName=${spring.application.name}&stringtype=unspecified
-    username: test
-    password: test
+    url: jdbc:postgresql://${TEST_DB_HOST:localhost}:${TEST_DB_PORT:5432}/test-db?ApplicationName=${spring.application.name}&stringtype=unspecified
+    username: ${TEST_DB_USERNAME:test}
+    password: ${TEST_DB_PASSWORD:test}
 transmetrics:
   date-time-api:
     host: https://api.xmltime.com
-    accesskey: Vp26hyEEOJ
-    secret_key: 89GXwVOJUec254TAdYn4
+    accesskey: ${DATE_TIME_API_ACCESS_KEY:fill_me_out}
+    secret_key: ${DATE_TIME_API_SECRET_KEY:fill_me_out}

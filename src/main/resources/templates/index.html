@@ -142,7 +142,6 @@
                         reader.read().then(({value}) => {
                             var valueString= new TextDecoder().decode(value);
                             var jsonValue=JSON.parse(valueString);
-                            console.log(JSON.stringify(jsonValue, undefined, 4));
                             var currentTextAreaValue=textArea.value
                             textArea.value=currentTextAreaValue+JSON.stringify(jsonValue, undefined, 4);
                         })
