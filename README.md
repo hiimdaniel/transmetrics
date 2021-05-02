@@ -46,3 +46,12 @@ entities from the Rest response objects.
 I decided to include a paginated endpoint as well to make it easier to consumer large amount of data. Defining a well usable paginated 
 entry could be really tricky, and I have to admit that there are holes in my implementation, for example the host of the next page URI
 will always be "localhost". 
+
+#### Missing tests ####
+Currently, just the most important functionalities of the application are being tested but it would be better to increase the test coverage
+or to create some more feature-comprehensive integration and end-to-end tests. 
+
+#### CI/CD, metrics, alerting, and many more ####
+In a real life scenario I wouldn't call this service production ready. There are many really important missing features
+like proper logging, metrics sending and configuration, integration with CI/CD pipelines, alerting configurations, etc. 
+As the goal of this assignment was not to produce a production ready code I felt these details to be omittable (there are corners to cut after all).
